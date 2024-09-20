@@ -27,7 +27,7 @@ generate_and_push:
 	git config user.name "GitHub Action";
 	git config user.email "action@github.com";
 	git add .
-	git commit -m "test"
+	git diff-index --quiet HEAD || git commit -m "test"
 	git push
 		
 all: install lint test format deploy
