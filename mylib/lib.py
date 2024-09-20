@@ -35,7 +35,9 @@ def create_line_chart(save_path):
     data_selected = dataset[['age', 'marijuana_use']]
 
     plt.figure(figsize=(10, 6))
-    plt.plot(data_selected['age'], data_selected['marijuana_use'], label='Marijuana Use (%)', marker='o', color='g')
+    plt.plot(data_selected['age'], 
+             data_selected['marijuana_use'], 
+             label='Marijuana Use (%)', marker='o', color='g')
 
     plt.xlabel('Age')
     plt.ylabel('Marijuana Use (%)')
