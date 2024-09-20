@@ -12,6 +12,7 @@ boto3==1.24.87
 #data
 pandas
 matplotlib
+tabulate
 
 
 
