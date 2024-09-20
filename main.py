@@ -2,18 +2,16 @@
 Main cli or app entry point
 """
 
-from mylib.calculator import add
-import click
+from mylib.lib import *
 
-#var=1;var=2
+def general_describe():
+    return load_dataset().describe()
 
-@click.command("add")
-@click.argument("a", type=int)
-@click.argument("b", type=int)
-def add_cli(a, b):
-    click.echo(add(a, b))
+def general_visualize():
+    create_histogram()
+    create_line_chart()
+    create_bar_chart()
 
-
-if __name__ == "__main__":
-    # pylint: disable=no-value-for-parameter
-    add_cli()
+if __name__ == '__main__':
+    print(general_describe())
+    general_visualize()
