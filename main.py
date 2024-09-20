@@ -19,3 +19,4 @@ def save_to_markdown():
 if __name__ == '__main__':
     print(general_describe())
     general_visualize()
+    save_to_markdown()
