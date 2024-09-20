@@ -4,15 +4,17 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 
-dataset = "https://raw.githubusercontent.com/fivethirtyeight/data/refs/heads/master/drug-use-by-age/drug-use-by-age.csv"
+dataset_url = "https://raw.githubusercontent.com/fivethirtyeight/data/refs/heads/master/drug-use-by-age/drug-use-by-age.csv"
 
 def load_dataset():
-    return pd.read_csv(dataset)
+    return pd.read_csv(dataset_url)
 
 def describe_dataset():
-    return pd.read_csv(dataset).describe()
+    # Return descriptive statistics of the dataset
+    return pd.read_csv(dataset_url).describe()
 
-def create_histogram():
+# Modify functions to save figures instead of just displaying them
+def create_histogram(save_path):
     dataset = load_dataset()
     plt.figure(figsize=(8, 6))
     
@@ -22,12 +24,13 @@ def create_histogram():
     plt.ylabel('Frequency')
     plt.title('Distribution of Alcohol Use')
     
-    # Show plot
+    # Save the plot as a PNG file
     plt.grid(True)
     plt.tight_layout()
-    plt.show()
+    plt.savefig(save_path)
+    plt.close()  # Close the figure after saving
 
-def create_line_chart():
+def create_line_chart(save_path):
     dataset = load_dataset()
     data_selected = dataset[['age', 'marijuana_use']]
 
@@ -40,9 +43,12 @@ def create_line_chart():
     plt.xticks(rotation=45)
     plt.grid(True)
     plt.tight_layout()
-    plt.show()
+    
+    # Save the line chart
+    plt.savefig(save_path)
+    plt.close()
 
-def create_bar_chart():
+def create_bar_chart(save_path):
     dataset = load_dataset()
     data_selected = dataset[['age', 'cocaine_use']]
 
@@ -54,5 +60,7 @@ def create_bar_chart():
     plt.title('Cocaine Use by Age')
     plt.xticks(rotation=45)
     plt.tight_layout()
-    plt.show()
-
+    
+    # Save the bar chart
+    plt.savefig(save_path)
+    plt.close()
