@@ -6,7 +6,7 @@ from mylib.lib import *
 
 def general_describe():
     """Save dataset statistics to Markdown and return the description."""
-    with open('test.md', 'w') as file:
+    with open('summary.md', 'w') as file:
         description = describe_dataset()
         file.write("# Dataset Statistics\n")
         file.write(description.to_markdown())
@@ -20,7 +20,7 @@ def general_visualize():
 
 def save_to_markdown():
     """Append visualizations and other information to Markdown."""
-    with open('test.md', 'a') as file:
+    with open('summary.md', 'a') as file:
         # Append images to the Markdown
         file.write("\n## Visualizations\n")
         file.write("### Alcohol Use Histogram\n")
