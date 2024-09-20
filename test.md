@@ -8,5 +8,11 @@
 | 25%   | 2469    |       40.1    |             10      |          8.7    |               30      |       0.5     |    0        |     0.1      |            0.6     |                  3       |       0.6      |             3.9     |                   12      |        0.4      |            1.4     |                   6      |         0.6     |                7      |   0.2      |       0.2      |               6.5    |
 | 50%   | 2798    |       64.6    |             48      |         20.8    |               52      |       2       |    0.4      |     0.2      |            3.2     |                  3       |       1.4      |             6.2     |                   12      |        1.1      |            3.5     |                  10      |         1.8     |               10      |   0.4      |       0.3      |              10      |
 | 75%   | 3058    |       77.5    |             52      |         28.4    |               52      |       4       |    0.5      |     0.6      |            5.2     |                  4       |       2        |             9       |                   15      |        1.4      |            4.2     |                  11      |         3       |               12      |   0.6      |       0.4      |              17.5    |
-| max   | 7391    |       84.2    |             52      |         34      |               72      |       4.9     |    0.6      |     1.1      |            8.6     |                 52       |       3        |            10       |                   36      |        1.7      |            5.4     |                  52      |         4.1     |              364      |   0.9      |       0.5      |             104      |## Test section
-This is a test entry in the markdown file.
+| max   | 7391    |       84.2    |             52      |         34      |               72      |       4.9     |    0.6      |     1.1      |            8.6     |                 52       |       3        |            10       |                   36      |        1.7      |            5.4     |                  52      |         4.1     |              364      |   0.9      |       0.5      |             104      |
+## Visualizations
+### Alcohol Use Histogram
+![Alcohol Use](alcohol_use_histogram.png)
+### Marijuana Use Line Chart
+![Marijuana Use](marijuana_use_line_chart.png)
+### Cocaine Use Bar Chart
+![Cocaine Use](cocaine_use_bar_chart.png)
