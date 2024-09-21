@@ -4,6 +4,7 @@ Main cli or app entry point
 
 from mylib.lib import (
     describe_dataset,
+    describe_median,
     create_histogram,
     create_line_chart,
     create_bar_chart,
@@ -14,8 +15,11 @@ def general_describe():
     """Save dataset statistics to Markdown and return the description."""
     with open("summary.md", "w") as file:
         description = describe_dataset()
+        median_values = describe_median()
         file.write("# Dataset Statistics\n")
         file.write(description.to_markdown())
+        file.write("\n## Median Values\n")
+        file.write(median_values.to_markdown())
     return description
 
 
@@ -42,6 +46,6 @@ def save_to_markdown():
 
 
 if __name__ == "__main__":
-    print(general_describe())
+    general_describe()
     general_visualize()
     save_to_markdown()

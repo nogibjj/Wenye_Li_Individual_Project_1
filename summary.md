@@ -9,6 +9,36 @@
 | 50%   | 2798    |       64.6    |             48      |         20.8    |               52      |       2       |    0.4      |     0.2      |            3.2     |                  3       |       1.4      |             6.2     |                   12      |        1.1      |            3.5     |                  10      |         1.8     |               10      |   0.4      |       0.3      |              10      |
 | 75%   | 3058    |       77.5    |             52      |         28.4    |               52      |       4       |    0.5      |     0.6      |            5.2     |                  4       |       2        |             9       |                   15      |        1.4      |            4.2     |                  11      |         3       |               12      |   0.6      |       0.4      |              17.5    |
 | max   | 7391    |       84.2    |             52      |         34      |               72      |       4.9     |    0.6      |     1.1      |            8.6     |                 52       |       3        |            10       |                   36      |        1.7      |            5.4     |                  52      |         4.1     |              364      |   0.9      |       0.5      |             104      |
+## Median Values
+|                         |      0 |
+|:------------------------|-------:|
+| n                       | 2798   |
+| alcohol_use             |   64.6 |
+| alcohol_frequency       |   48   |
+| marijuana_use           |   20.8 |
+| marijuana_frequency     |   52   |
+| cocaine_use             |    2   |
+| cocaine_frequency       |    5   |
+| crack_use               |    0.4 |
+| crack_frequency         |    6   |
+| heroin_use              |    0.2 |
+| heroin_frequency        |   50   |
+| hallucinogen_use        |    3.2 |
+| hallucinogen_frequency  |    3   |
+| inhalant_use            |    1.4 |
+| inhalant_frequency      |    4   |
+| pain_releiver_use       |    6.2 |
+| pain_releiver_frequency |   12   |
+| oxycontin_use           |    1.1 |
+| oxycontin_frequency     |   12   |
+| tranquilizer_use        |    3.5 |
+| tranquilizer_frequency  |   10   |
+| stimulant_use           |    1.8 |
+| stimulant_frequency     |   10   |
+| meth_use                |    0.4 |
+| meth_frequency          |   24   |
+| sedative_use            |    0.3 |
+| sedative_frequency      |   10   |
 ## Visualizations
 ### Alcohol Use Histogram
 ![Alcohol Use](alcohol_use_histogram.png)

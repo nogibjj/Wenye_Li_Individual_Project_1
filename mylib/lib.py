@@ -13,6 +13,11 @@ def describe_dataset():
     # Return descriptive statistics of the dataset
     return pd.read_csv(dataset_url).describe()
 
+def describe_median():
+    dataset = load_dataset().replace("-", 0)
+    median_values = dataset.iloc[:, 1:].median()
+    return median_values
+
 # Modify functions to save figures instead of just displaying them
 def create_histogram(save_path):
     dataset = load_dataset()
@@ -66,3 +71,5 @@ def create_bar_chart(save_path):
     # Save the bar chart
     plt.savefig(save_path)
     plt.close()
+
+# print(describe_median())
